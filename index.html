@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>
+    
+  var a = (10)
+    var r = ("Result:")
+    document.write(r)
+    document.write(("<br>"))
+    document.write("The value of a is:" + a)
+    document.write(("<br>"))
+    document.write(("<br>"))
+    document.write(("<br>"))
+    document.write("The value of ++a is:" + ++a)
+    document.write(("<br>"))
+    document.write("Now the value of a is:" + a)
+    document.write(("<br>"))
+    document.write(("<br>"))
+    document.write("The value of a++ is:" + a++)
+    document.write(("<br>"))
+    document.write("Now the value of a is:" + a)
+    document.write(("<br>"))
+    document.write(("<br>"))
+    document.write(("<br>"))
+    document.write("The value of --a is:" + --a)
+    document.write(("<br>"))
+    document.write("Now the value of a is:" + a)
+    document.write(("<br>"))
+    document.write(("<br>"))
+    document.write("The value of a-- is:" + a--)
+    document.write(("<br>"))
+    document.write("Now the value of a is:" + a)
+
+    document.write(("<br>"))
+    document.write(("<br>"))
+    var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
+
+console.log("a:", a);        // Output: a: -2
+console.log("b:", b);        // Output: b: -1
+console.log("result:", result);  // Output: result: -1
+
+document.write(("<br>"))
+document.write(("<br>"))
+
+// Prompt the user for their name
+var userName = prompt("Please enter your name:");
+
+// Check if the user provided a name
+if (userName !== null && userName !== "") {
+    // Greet the user
+    alert("Hello, " + userName + "! Welcome!");
+} else {
+    // Handle the case where the user didn't enter a name
+    alert("Hello, anonymous! Welcome!");
+}
+
+document.write(("<br>"))
+document.write(("<br>"))
+
+        // Prompt the user for a number
+        var number = prompt("Enter a number for the multiplication table:");
+
+        // If the user didn't enter a number, use 5 as the default
+        if (number === null || number === "") {
+            number = 5;
+        }
+
+        // Display the multiplication table
+        document.write("<h2>Multiplication Table for " + number + "</h2>");
+        for (var i = 1; i <= 10; i++) {
+            document.write(number + " x " + i + " = " + (number * i) + "<br>");
+        }
+
+document.write(("<br>"))
+document.write(("<br>"))
+
+        // Step a) Take three subjects' names from the user
+        var subject1 = prompt("Enter the name of the first subject:");
+        var subject2 = prompt("Enter the name of the second subject:");
+        var subject3 = prompt("Enter the name of the third subject:");
+
+        // Step b) Total marks for each subject
+        var totalMarks = 100;
+
+        // Step c) Take obtained marks for the first subject from the user
+        var obtainedMarks1 = parseInt(prompt("Enter obtained marks for " + subject1 + ":"));
+
+        // Step d) Take obtained marks for the remaining 2 subjects from the user
+        var obtainedMarks2 = parseInt(prompt("Enter obtained marks for " + subject2 + ":"));
+        var obtainedMarks3 = parseInt(prompt("Enter obtained marks for " + subject3 + ":"));
+
+        // Step e) Calculate total marks and percentage
+        var totalObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3;
+        var percentage = (totalObtainedMarks / (totalMarks * 3)) * 100;
+
+        // Display the result in a table format
+        document.write("<h2>Subject Marks</h2>");
+        document.write("<table border='1'>");
+        document.write("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th></tr>");
+        document.write("<tr><td>" + subject1 + "</td><td>" + totalMarks + "</td><td>" + obtainedMarks1 + "</td></tr>");
+        document.write("<tr><td>" + subject2 + "</td><td>" + totalMarks + "</td><td>" + obtainedMarks2 + "</td></tr>");
+        document.write("<tr><td>" + subject3 + "</td><td>" + totalMarks + "</td><td>" + obtainedMarks3 + "</td></tr>");
+        document.write("<tr><td>Total</td><td>" + (totalMarks * 3) + "</td><td>" + totalObtainedMarks + "</td></tr>");
+        document.write("<tr><td>Percentage</td><td colspan='2'>" + percentage.toFixed(2) + "%</td></tr>");
+        document.write("</table>");
+
+
+
+  </script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
